@@ -66,6 +66,7 @@ def _pre_tool_call(tool_name=None, args=None, **_kwargs):
                 timeout=_rewrite_timeout(),
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
             )
         except subprocess.TimeoutExpired:
             _warn("rtk rewrite timed out")
