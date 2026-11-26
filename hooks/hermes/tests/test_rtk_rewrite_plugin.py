@@ -152,6 +152,7 @@ class RtkRewritePluginTest(unittest.TestCase):
                     timeout=5,
                     capture_output=True,
                     text=True,
+                    encoding="utf-8",
                 )
                 self.assertIsNone(directive)
                 self.assertEqual(
